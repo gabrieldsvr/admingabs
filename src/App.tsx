@@ -22,6 +22,7 @@ function App() {
 
     const {token, setToken} = useToken();
     if (!isTokenValid(token)) {
+        console.log(token)
         return <SnackbarProvider><Login setToken={setToken}/></SnackbarProvider>
     }
 
